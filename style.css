@@ -1,0 +1,478 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F7F4ED;
+    color:#242424;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:0 64px;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+    width:100%;
+    height:76px;
+    border-bottom:1px solid #242424;
+    background:#F7F4ED;
+}
+
+.navbar{
+    height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+}
+
+.logo-icon{
+
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+    background:#000;
+
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:'Spectral',serif;
+    font-size:25px;
+    font-weight:700;
+
+}
+
+.logo span{
+
+    margin-left:10px;
+
+    font-size:34px;
+    font-family:'Spectral',serif;
+    font-weight:700;
+
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+nav{
+
+    display:flex;
+    align-items:center;
+    gap:34px;
+
+    margin-left:auto;
+    margin-right:30px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:#242424;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#000;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.get-started{
+
+    border:none;
+
+    width:118px;
+    height:42px;
+
+    border-radius:999px;
+
+    background:#191919;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+.get-started:hover{
+
+    background:#000;
+
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    width:100%;
+    border-bottom:1px solid #242424;
+
+}
+
+.hero-container{
+
+    min-height:560px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+
+.hero-text{
+
+    max-width:560px;
+
+}
+
+.hero-text h1{
+
+    font-family:'Spectral',serif;
+
+    font-size:112px;
+
+    font-weight:400;
+
+    line-height:95px;
+
+    letter-spacing:-5px;
+
+    margin-bottom:35px;
+
+}
+
+.hero-text p{
+
+    font-size:24px;
+
+    line-height:34px;
+
+    margin-bottom:45px;
+
+    max-width:430px;
+
+}
+
+.start-reading{
+
+    width:215px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#191919;
+
+    color:#fff;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.start-reading:hover{
+
+    background:#000;
+
+}
+
+/* ==========================================
+   HERO IMAGE
+========================================== */
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+.hero-image img{
+
+    width:560px;
+
+    display:flex;
+    justify-content:flex-end;
+
+    max-width:100%;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+    width:100%;
+    background:#ffffff;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:24px;
+    padding:25px 20px;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:#6B6B6B;
+    font-size:13px;
+    transition:.3s ease;
+}
+
+.footer-links a:hover{
+    color:#242424;
+}
+
+/* ==========================================
+   LARGE LAPTOP
+========================================== */
+
+@media (max-width:1200px){
+
+    .container{
+        padding:0 40px;
+    }
+
+    .hero-text h1{
+        font-size:90px;
+        line-height:82px;
+    }
+
+    .hero-image img{
+        width:470px;
+    }
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:992px){
+
+    .container{
+        padding:0 30px;
+    }
+
+    nav{
+        gap:22px;
+        margin-right:20px;
+    }
+
+    .hero-container{
+        min-height:500px;
+    }
+
+    .hero-text h1{
+        font-size:72px;
+        line-height:70px;
+        letter-spacing:-2px;
+    }
+
+    .hero-text p{
+        font-size:21px;
+    }
+
+    .hero-image img{
+        width:330px;
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    header{
+        height:74px;
+    }
+
+    .navbar{
+        height:74px;
+    }
+
+    .container{
+        padding:0 20px;
+    }
+
+    /* Hide desktop navigation */
+
+    nav{
+        display:none;
+    }
+
+    .logo-icon{
+        width:34px;
+        height:34px;
+        font-size:21px;
+    }
+
+    .logo span{
+        font-size:28px;
+    }
+
+    .get-started{
+        width:112px;
+        height:40px;
+        font-size:14px;
+    }
+
+    .hero{
+        padding:60px 0;
+    }
+
+    .hero-container{
+        display:block;
+        min-height:auto;
+    }
+
+    .hero-text{
+        max-width:100%;
+    }
+
+    .hero-text h1{
+        font-size:62px;
+        line-height:60px;
+        letter-spacing:-2px;
+        margin-bottom:28px;
+    }
+
+    .hero-text p{
+        font-size:22px;
+        line-height:32px;
+        max-width:100%;
+        margin-bottom:35px;
+    }
+
+    /* Hide illustration */
+
+    .hero-image{
+        display:none;
+    }
+
+    .start-reading{
+        width:205px;
+        height:46px;
+        background:#1A8917;
+        font-size:19px;
+    }
+
+    .footer-links{
+        justify-content:flex-start;
+        gap:18px;
+        padding:20px;
+    }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+    .container{
+        padding:0 16px;
+    }
+
+    .logo span{
+        font-size:25px;
+    }
+
+    .hero{
+        padding:48px 0;
+    }
+
+    .hero-text h1{
+        font-size:52px;
+        line-height:52px;
+        letter-spacing:-1px;
+    }
+
+    .hero-text p{
+        font-size:20px;
+        line-height:30px;
+    }
+
+    .start-reading{
+        width:185px;
+        height:44px;
+        font-size:18px;
+    }
+
+    .footer-links{
+        gap:14px;
+    }
+
+    .footer-links a{
+        font-size:12px;
+    }
+
+}
